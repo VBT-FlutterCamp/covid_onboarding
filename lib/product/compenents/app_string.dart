@@ -1,4 +1,6 @@
 class AppString {
-  String? skipButton = 'Skip';
-  String? NextButton = 'Next';
+  String? _skipButton = 'Skip';
+  String? _nextButton = 'Next';
+  String? get skipButton => _skipButton;
+  String? get nextButton => _nextButton;
 }

@@ -15,6 +15,7 @@ class OnBoardScreen extends StatefulWidget {
 class _OnBoardScreenState extends State<OnBoardScreen> {
   int currentIndex = 0;
   PageController? _controller;
+  double _double_radius = 40.0;
 
   @override
   void initState() {
@@ -65,7 +66,8 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
           decoration: BoxDecoration(
               color: Colors.blueGrey,
               borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(40), topRight: Radius.circular(40))),
+                  topLeft: Radius.circular(_double_radius),
+                  topRight: Radius.circular(_double_radius))),
           child: Column(children: [
             SizedBox(
               height: context.dynamicHeight(0.03),
@@ -146,7 +148,7 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
               _controller?.nextPage(
                   duration: context.durationNormal, curve: Curves.bounceIn);
             },
-            child: Text(AppString().NextButton.toString()),
+            child: Text(AppString().nextButton.toString()),
           )
         ],
       ),
