@@ -13,6 +13,7 @@ class OnBoardScreen extends StatefulWidget {
 }
 
 class _OnBoardScreenState extends State<OnBoardScreen> {
+  int _lastPageValue = 1;
   int currentIndex = 0;
   PageController? _controller;
   double _double_radius = 40.0;
@@ -123,14 +124,14 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
                 minimumSize: Size(
                     context.dynamicWidth(0.3), context.dynamicHeight(0.3))),
             onPressed: () {
-              if (currentIndex == models.length - 1) {
+              if (currentIndex == models.length - _lastPageValue) {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (_) => _buildMain(0, context)));
               }
               _controller?.nextPage(
                   duration: context.durationNormal, curve: Curves.bounceIn);
             },
-            child: Text(AppString().skipButton.toString()),
+            child: Text(AppString.skipButton),
           ),
           SizedBox(
             width: context.dynamicWidth(0.05),
@@ -141,14 +142,14 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
                 minimumSize: Size(
                     context.dynamicWidth(0.3), context.dynamicHeight(0.3))),
             onPressed: () {
-              if (currentIndex == models.length - 1) {
+              if (currentIndex == models.length - _lastPageValue) {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (_) => _buildMain(0, context)));
               }
               _controller?.nextPage(
                   duration: context.durationNormal, curve: Curves.bounceIn);
             },
-            child: Text(AppString().nextButton.toString()),
+            child: Text(AppString.nextButton),
           )
         ],
       ),
