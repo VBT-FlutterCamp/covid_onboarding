@@ -5,8 +5,6 @@ import 'package:covid_onboarding/feature/onboard/model/onboard_model.dart';
 import 'package:kartal/kartal.dart';
 import 'package:covid_onboarding/product/compenents/app_string.dart';
 
-import 'login_view.dart';
-
 class OnBoardScreen extends StatefulWidget {
   const OnBoardScreen({Key? key}) : super(key: key);
 
@@ -146,7 +144,7 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
             onPressed: () {
               if (currentIndex == models.length - _lastPageValue) {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LoginView()));
+                    MaterialPageRoute(builder: (_) => _buildMain(0, context)));
               }
               _controller?.nextPage(
                   duration: context.durationNormal, curve: Curves.bounceIn);
