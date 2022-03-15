@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "472111147301",
+    "project_id": "bitirme-d69a6",
+    "storage_bucket": "bitirme-d69a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472111147301:android:996c67fae61154d7fd92cc",
+        "android_client_info": {
+          "package_name": "com.example.covid_onboarding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472111147301-3jhi5stf5p7jlkm5oi27rr8dvi2vamec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa07qmhX25gDTOtqZaaOCDga2ExC0ImzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472111147301-3jhi5stf5p7jlkm5oi27rr8dvi2vamec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
